@@ -1,0 +1,19 @@
+[versions]
+
+ksp = "2.0.21-1.0.25"
+ktpoet = "1.18.1"
+javapoet = "1.13.0"
+mixins = "0.15.3+mixin.0.8.7"
+mixinextras = "0.5.0-beta.3"
+
+[libraries]
+
+mixins = { module = "net.fabricmc:sponge-mixin", version.ref = "mixins" }
+mixinextras = { module = "io.github.llamalad7:mixinextras-common", version.ref = "mixinextras" }
+
+ksp = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "ksp" }
+ktPoet = { module = "com.squareup:kotlinpoet", version.ref = "ktpoet" }
+kspPoet = { module = "com.squareup:kotlinpoet-ksp", version.ref = "ktpoet" }
+
+javaKtPoet = { module = "com.squareup:kotlinpoet-javapoet", version.ref = "ktpoet" }
+javaPoet = { module = "com.squareup:javapoet", version.ref = "javapoet" }
